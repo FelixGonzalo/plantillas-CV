@@ -1,0 +1,54 @@
+.contenedor{
+    display: flex;
+    margin: 10%;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+aside {
+    width: 30%; 
+    background-color: #0C6156;
+    color: white;
+}
+
+aside h2 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-bottom: 2px solid white;
+    margin: auto;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.fotoPrincipal {
+    border-radius: 50%;
+    width: 70%; 
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+.resumen__nombre {
+    background-color: #aaa8a3;
+    box-shadow: 1px 1px 5px 1px black inset;
+    padding: 1em;
+}
+
+.resumen__sobremi {
+    background-color: #d6d5d2;
+}
+
+.referencias article {
+    width: 50%;
+}
+
+figure img {
+    width: 70%; 
+    height: auto;
+}

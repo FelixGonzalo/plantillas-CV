@@ -3,11 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title> plantillas CV </title>
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
+    <div class = "contenedor">
         <aside>
-            <img src="img/fekilo.png" alt="Felix Castro" />
-            <section>
+            <img class = "fotoPrincipal" src="img/fekilo.png" alt="Felix Castro" />
+            <section class = "educacion">
                 <h2>Educación</h2>
                 <ul>
                     <li><p>Carrera profesional</p>
@@ -18,7 +20,7 @@
                     </li>
                 </ul>
             </section>
-            <section>
+            <section class = "habilidadesTecnicas">
                 <h2>Habilidades técnicas</h2>
                 <ul>
                     <li>HTML</li>
@@ -27,7 +29,7 @@
                     <li>JQuery</li>
                 </ul>
             </section>
-            <section>
+            <section class = "habilidadesPersonales">
                 <h2>Habilidades personales</h2>
                 <ul>
                     <li>Creatividad</li>
@@ -35,7 +37,7 @@
                     <li>Trabajo en equipo</li>
                 </ul>
             </section>
-            <section>
+            <section class = "contacto">
                 <h2>Contacto</h2>
                 <ul>
                     <li>Ciudad</li>
@@ -49,20 +51,20 @@
             </section>
         </aside>
         <main>
-            <section>
-                <h1>Félix Gonzalo Castro Cubas</h1>
-                <h2>Currículum Vitae</h2>
-            </section>
-            <section>
+            <section class = "resumen">
+                <div class = "resumen__nombre">
+                    <h1>Félix Gonzalo Castro Cubas</h1>
+                    <h2>Currículum Vitae</h2>
+                </div>
                 <h2>Resumen</h2>
-                <p> Aquí va un resumen. Hola, soy Félix Castro, 
+                <p class = "resumen__sobremi"> Aquí va un resumen. Hola, soy Félix Castro, 
                     este es una plantilla de Currículum vitae.
                     Si confías en ti mismo y crees en tus sueños y sigues a tu estrella,
                     igual vas a ser derrotado por gente que pasó su tiempo trabajando duro 
                     y aprendiendo cosas y no fue tan perezosa..
                 </p>
             </section>
-            <section>
+            <section class = "experiencia">
                 <h2>Experiencia</h2>
                 <article>
                     <h3>Trabajo a</h3>
@@ -97,7 +99,7 @@
                         practicar, practicar. Si no amas algo, entonces no lo hagas. </p>
                 </article>
             </section>
-            <section>
+            <section class = "referencias">
                 <h2>Referencias</h2>
                 <article>
                     <h3>Empresa A</h3>
@@ -138,5 +140,7 @@
                 </article>
             </section>
         </main>
+    </div>
+       
     </body>
 </html>
