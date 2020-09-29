@@ -1,69 +1,129 @@
 body{
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .contenedorCV{
+    background-color: #d8e7ec;
+    box-shadow: 0 0 3px rgb(22, 22, 27);
     display: flex;
-    margin: 10%;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-bottom: 10%;
+    margin-left: 20%;
+    margin-top: 10%;
+    padding: 10px;
+    width: 60%;
 }
 
-ul {
-    list-style-type: none;
-}
-
-/*aside*/
+/*ASIDE*/
 
 aside {
     background-color: #0C6156;
-    color: white;
-    margin-right: 5%;
-    width: 30%; 
+    box-shadow: 0 0 1px 2px#041613;
+    color:rgb(236, 233, 233);
+    margin-right: 10px;
+    padding: 2%;
+    width: 150%;
 }
 
 aside h2 {
     border-bottom: 2px solid white;
-    letter-spacing: 5px;
-    margin: auto;
-    padding-right: 10%;
-    padding-left: 10%;
+    letter-spacing: 2px;
+    margin-top: 20px;
     text-transform: uppercase;
+}
+
+aside ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .fotoPrincipal {
     border-radius: 50%;
+    border: #0a4941 3px solid;
     display: block;
-    height: auto;
     margin: auto;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    width: 70%; 
+    width: 70%;
+} 
+
+.educacion li p:first-child {
+    font-size: 90%;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-/*Main*/
+/*MAIN*/
+main h2 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+main h3, main h4 {
+    color: rgb(44, 44, 44);
+    margin: 0;
+}
 
 .resumen__nombre {
-    background-color: #aaa8a3;
-    box-shadow: 1px 1px 5px 1px black inset;
+    background-color: #a2c0bc;
+    box-shadow: 0 0 1px 1px gray  inset;
     padding: 1em;
     text-align: center;
 }
 
-.resumen__sobremi {
-    background-color: #d6d5d2;
+.resumen__nombre h1 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
+.resumen__nombre h2{
+    border-top: black 1px solid;
+    color: rgb(75, 75, 75);
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+
+.resumen__sobremi {
+    background-color: #c0c9c6;
+    margin: 0px;
+    padding: 5%;
+}
+
+.experiencia  {
+    padding: 5%;
+    text-align: justify;
+    
+}
+
+.experiencia p { color: rgb(32, 32, 32); }
+
 .referencias__contenedor {
+    background-color: lightgray;
     display: flex;
     flex-wrap: wrap;
 }
 
-.referencias__contenedor article {
+.referencias { margin: 5%; }
+
+.referencias__contenedor article { 
     width: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
+.referencias__contenedor h3{ text-align: center; }
+
 .referencias__contenedor img {
-    width: 70%; 
+    display: block;
+    margin: auto;
+    width: 70px; 
+}
+
+.referencias__contenedor span {
+    display: block;
+    text-align: center;
 }
