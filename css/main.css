@@ -1,129 +1,152 @@
-body{
-    font-family: sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: cursive,sans-serif;
 }
 
-.contenedorCV{
-    background-color: #d8e7ec;
-    box-shadow: 0 0 3px rgb(22, 22, 27);
-    display: flex;
-    margin-bottom: 10%;
-    margin-left: 20%;
-    margin-top: 10%;
+body{
+    font-size: 16px;
+}
+
+/* ------ estructura ----- */
+
+.contenedorCV {
+    background-color: rgb(48, 58, 59);
     padding: 10px;
-    width: 60%;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "aside main";
 }
 
-/*ASIDE*/
+aside {grid-area: aside;}
+main {grid-area: main;}
+
+aside, main {
+    padding: 10px;
+}
+
+/* ------ aside ----- */
 
 aside {
     background-color: #0C6156;
     box-shadow: 0 0 1px 2px#041613;
     color:rgb(236, 233, 233);
-    margin-right: 10px;
-    padding: 2%;
-    width: 150%;
 }
 
 aside h2 {
     border-bottom: 2px solid white;
     letter-spacing: 2px;
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
 
 aside ul {
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
 }
 
 .fotoPrincipal {
-    border-radius: 50%;
+    border-radius: 20px 10px 50px 0;
     border: #0a4941 3px solid;
+    width: 50%;
     display: block;
     margin: auto;
-    width: 70%;
+
 } 
 
 .educacion li p:first-child {
-    font-size: 90%;
-    font-weight: bold;
     text-transform: uppercase;
 }
 
-/*MAIN*/
+/* ----- main ----- */
+
+main {
+    background-color: rgb(220, 235, 236);
+    border: 1px solid #000;
+}
+
 main h2 {
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
 }
 
 main h3, main h4 {
     color: rgb(44, 44, 44);
-    margin: 0;
 }
 
 .resumen__nombre {
     background-color: #a2c0bc;
     box-shadow: 0 0 1px 1px gray  inset;
-    padding: 1em;
+    padding: 50px 20px;
     text-align: center;
 }
 
-.resumen__nombre h1 {
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
 .resumen__nombre h2{
-    border-top: black 1px solid;
     color: rgb(75, 75, 75);
     font-weight: normal;
     letter-spacing: 2px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: auto;
     padding-top: 20px;
     text-transform: capitalize;
 }
 
 .resumen__sobremi {
     background-color: #c0c9c6;
-    margin: 0px;
-    padding: 5%;
+    padding: 20px;
 }
 
 .experiencia  {
-    padding: 5%;
-    text-align: justify;
-    
+    padding: 10px;
 }
 
-.experiencia p { color: rgb(32, 32, 32); }
+.experiencia article {
+    margin: 20px 0;
+}
 
-.referencias__contenedor {
-    background-color: lightgray;
+/* ----- referencias */
+
+.referencias {
+    padding: 10px;
+    text-align: center;
+}
+
+.referencias__lista {
+    background-color: rgb(211, 211, 211);
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.referencias { margin: 5%; }
-
-.referencias__contenedor article { 
-    width: 50%;
-    margin-bottom: 10px;
-    margin-top: 10px;
+.referencias__lista article {
+    min-width: 100px;
+    max-width: 100px;
+    margin: 20px 0;
 }
 
-.referencias__contenedor h3{ text-align: center; }
-
-.referencias__contenedor img {
-    display: block;
-    margin: auto;
-    width: 70px; 
+.referencias__lista article img{
+    width: 100%;
 }
 
-.referencias__contenedor span {
-    display: block;
-    text-align: center;
+/* tablets */
+@media (max-width: 992px) {
+
+    .contenedorCV {
+        width: 100%;
+        margin: 0;
+        grid-template-areas: "aside"
+                             "main";
+    }
+
+    .referencias__lista article {
+        min-width: 500px;
+        max-width: 500px;
+        margin: 30px 0px;
+        font-size: 1.875rem;
+    }
 }
